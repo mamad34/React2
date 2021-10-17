@@ -1,7 +1,12 @@
 import React from "react";
+import "./Circle.css";
 
-const circle = () => {
-  return <div>This is text</div>;
+const Circle = (props) => {
+  console.log(props);
+
+  return (
+    <div className="circle" style={{ backgroundColor: props.color }}></div>
+  );
 };
 
-export default circle;
+export default Circle;
