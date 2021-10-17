@@ -1,7 +1,7 @@
 import React from "react";
 import "./Table.css";
 
-const Table = () => {
+const Table = (props) => {
   return (
     <table className="table">
       <tr className="tr">
@@ -10,7 +10,7 @@ const Table = () => {
         <th>table Head 3</th>
       </tr>
       <tr className="tr">
-        <td>teble h1 data</td>
+        <td>{props.tableData}</td>
         <td>teble h2 data</td>
         <td>teble h3 data</td>
       </tr>
